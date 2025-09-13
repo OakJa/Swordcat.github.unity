@@ -11,7 +11,17 @@
 <img width="309" height="246" alt="image" src="https://github.com/user-attachments/assets/7edd3064-ee06-47e4-9453-7d97dbe75845" />/n
 
 ตาย gg/n
-<img width="202" height="153" alt="image" src="https://github.com/user-attachments/assets/d508161d-1fa6-4f1b-b200-d1a07221ca80" />
+<img width="202" height="153" alt="image" src="https://github.com/user-attachments/assets/d508161d-1fa6-4f1b-b200-d1a07221ca80" />/n
+
+<img width="427" height="329" alt="image" src="https://github.com/user-attachments/assets/46c6fb31-aa71-4538-aaae-e47212432ab6" />/n
+
+
+<img width="542" height="338" alt="image" src="https://github.com/user-attachments/assets/27342a66-24bd-4e6c-8a76-b75f306a50bb" />/n
+
+<img width="1199" height="476" alt="image" src="https://github.com/user-attachments/assets/ddd16df8-7ded-4cbe-b93b-7ef3f0641d98" />
+
+
+
 
 
 
