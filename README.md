@@ -1,7 +1,7 @@
 # Swordcat.github.unity
 นี้คือโปรเจคทำเกม 2d ปี 2
-ยืน
-<img width="346" height="230" alt="image" src="https://github.com/user-attachments/assets/f30b8450-a368-4090-a674-fcacb142cd7c" />
+ยืน /n
+<img width="346" height="230" alt="image" src="https://github.com/user-attachments/assets/f30b8450-a368-4090-a674-fcacb142cd7c" /> /n
 
 เดินหน้าถอยหลัง
 /n
