@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - PlayerStus
+  - 'EnemyAttack '
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Ground
+  - PlayerStus
+  - EnemyAttack
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: player
+    uniqueID: 3349267723
+    locked: 0
+  - name: groud
+    uniqueID: 2472786319
+    locked: 0
+  - name: backgroud
+    uniqueID: 1368379895
+    locked: 0
+  m_RenderingLayers:
+  - Default
