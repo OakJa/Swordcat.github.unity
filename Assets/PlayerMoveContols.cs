@@ -12,6 +12,8 @@ public class PlayerMoveContols : MonoBehaviour
     public Transform LeftPoint;
     public Transform RightPoint;
 
+    public bool Knockback = false  ;
+
     private Rigidbody2D rb;
     private Gatherinput gatherInput;
     private Animator animator;
@@ -42,6 +44,8 @@ public class PlayerMoveContols : MonoBehaviour
         Move();
         JumpPlayer();
     }
+
+   
 
     private void Move()
     {

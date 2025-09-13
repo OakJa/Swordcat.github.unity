@@ -1,45 +1,67 @@
 using UnityEngine;
-using System.Collections; // สำหรับ IEnumerator และ WaitForSeconds
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerStus : MonoBehaviour
 {
-    public float maxHealth;
+    public float maxHealth = 10f;
     public float health;
     public bool canTakeDamage = true;
+    public Slider HPbarSlider;   // Slider UI element for health bar
+    public Text HPText;          // Text UI element for displaying health
+    public GameOverscreen GameOverscreen;   // Game Over UI
 
     private Animator animator;
-
-     private bool isDead = false;
+    private bool isDead = false;
 
     void Start()
     {
         health = maxHealth;
         animator = GetComponentInParent<Animator>();
+
+        if (HPbarSlider != null)
+        {
+            HPbarSlider.maxValue = maxHealth;
+            HPbarSlider.value = health;
+        }
     }
 
     void Update()
     {
-        // ไม่มีอะไรจะทำที่นี่ในตอนนี้
-    }
+        if (HPText != null)
+        {
+            HPText.text = "HP: " + health.ToString() + " / " + maxHealth.ToString();
+        }
 
+        if (HPbarSlider != null)
+        {
+            HPbarSlider.value = health;
+        }
+    }
+  
     public void TakeDamage(float damage)
     {
         if (!canTakeDamage)
             return;
 
-        // ลด HP ตามที่เสียหาย
         health -= damage;
 
-        if (health <= 0f)
+        animator.SetTrigger("Hurt");  
+
+        if (health <= 0f && !isDead)
         {
             isDead = true;
             animator.SetBool("dead", true);
             GetComponent<PolygonCollider2D>().enabled = false;
 
-            // หากมีคลาส GatherInput ให้เรียกฟังก์ชันที่คุณสร้างขึ้นเองแทน OnDisable
             GetComponentInParent<Gatherinput>().OnDisable();
-         
             Debug.Log("Player Dead");
+
+            if (GameOverscreen != null)
+            {
+                GameOverscreen.Setup(0); 
+            }
         }
 
         StartCoroutine(DamagePrevention());
@@ -49,7 +71,7 @@ public class PlayerStus : MonoBehaviour
     {
         canTakeDamage = false;
         yield return new WaitForSeconds(0.15f);
-        // เปิดการรับความเสียหายใหม่ถ้าผู้เล่นยังมี HP มากกว่า 0
+
         if (health > 0f)
         {
             canTakeDamage = true;

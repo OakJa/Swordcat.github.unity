@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jump peak
+  m_Name: Hunt
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -3266683914952786302, guid: 269908c56c7b7b24b95492b8227dec7e, type: 3}
+      value: {fileID: -4817066545832311599, guid: 70acd6da5600f3c4f8325e63536717b4, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +44,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -3266683914952786302, guid: 269908c56c7b7b24b95492b8227dec7e, type: 3}
+    - {fileID: -4817066545832311599, guid: 70acd6da5600f3c4f8325e63536717b4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
